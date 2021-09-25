@@ -13,8 +13,10 @@ export const Wrapper = styled.div`
     padding-inline: 1rem;
   }
 
-  input {
-    display: none;
+  button {
+    border: none;
+    outline: none;
+    background-color: #fff;
   }
 
   .icon-loading {

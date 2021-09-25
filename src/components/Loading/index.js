@@ -6,7 +6,6 @@ const Loading = ({ handleClick }) => {
   return (
     <Wrapper>
       <h3>random</h3>
-      <input type="checkbox" id="loading-checkbox" />
       <button onClick={handleClick}>
         <MdAutorenew className="icon-loading" />
       </button>
