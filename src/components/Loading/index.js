@@ -1,8 +1,6 @@
 import React from "react";
 import { MdAutorenew } from "react-icons/md";
-//import useFetchData from "../../hooks/useFetchData";
 import { Wrapper } from "./Loading.styles";
-import { useState } from "react";
 
 const Loading = ({ handleClick }) => {
   return (
