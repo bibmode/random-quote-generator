@@ -1,10 +1,10 @@
 import QuoteBlock from "../QuoteBlock";
 import { Wrapper } from "./Home.styles";
 
-const Home = () => {
+const Home = ({ author, genre, quote }) => {
   return (
     <Wrapper>
-      <QuoteBlock />
+      <QuoteBlock quote={quote} />
     </Wrapper>
   );
 };

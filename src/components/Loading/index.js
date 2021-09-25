@@ -1,15 +1,17 @@
 import React from "react";
 import { MdAutorenew } from "react-icons/md";
+//import useFetchData from "../../hooks/useFetchData";
 import { Wrapper } from "./Loading.styles";
+import { useState } from "react";
 
-const Loading = () => {
+const Loading = ({ handleClick }) => {
   return (
     <Wrapper>
       <h3>random</h3>
       <input type="checkbox" id="loading-checkbox" />
-      <label for="loading-checkbox">
+      <button onClick={handleClick}>
         <MdAutorenew className="icon-loading" />
-      </label>
+      </button>
     </Wrapper>
   );
 };
