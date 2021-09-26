@@ -1,6 +1,6 @@
 import { Quote, Wrapper } from "./QuoteBlock.styles";
 
-const QuoteBlock = ({ author, genre, quote }) => {
+const QuoteBlock = ({ quote }) => {
   return (
     <Wrapper>
       <Quote>

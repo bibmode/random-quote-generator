@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./components/Home";
 import Loading from "./components/Loading";
 import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AuthorQuotes from "./components/AuthorQuotes";
 
 function App() {
   const [quote, setQuote] = useState(
@@ -17,7 +19,6 @@ function App() {
     fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setQuote(data.data[0].quoteText);
         setAuthor(data.data[0].quoteAuthor);
         setGenre(data.data[0].quoteGenre);
@@ -27,8 +28,17 @@ function App() {
 
   return (
     <div className="App">
-      {<Loading handleClick={handleClick} loading={!isPending} />}
-      <Home quote={quote} author={author} genre={genre} />
+      <Router>
+        {<Loading handleClick={handleClick} loading={!isPending} />}
+        <Switch>
+          <Route exact path="/">
+            <Home quote={quote} author={author} genre={genre} />
+          </Route>
+          <Route exact path="/authorquotes">
+            <AuthorQuotes author={author} />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
