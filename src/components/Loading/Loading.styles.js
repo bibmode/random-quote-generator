@@ -23,4 +23,19 @@ export const Wrapper = styled.div`
     font-size: 2.2rem;
     cursor: pointer;
   }
+
+  .icon-loading-animated {
+    font-size: 2.2rem;
+    cursor: auto;
+    animation: loadingAnimation 1s ease-in infinite;
+  }
+
+  @keyframes loadingAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;

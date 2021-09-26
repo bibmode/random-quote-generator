@@ -9,8 +9,11 @@ function App() {
   );
   const [author, setAuthor] = useState("Bill Gates");
   const [genre, setGenre] = useState("business");
+  const [isPending, setIsPending] = useState(false);
 
   const handleClick = () => {
+    setIsPending(true);
+
     fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
       .then((res) => res.json())
       .then((data) => {
@@ -18,14 +21,13 @@ function App() {
         setQuote(data.data[0].quoteText);
         setAuthor(data.data[0].quoteAuthor);
         setGenre(data.data[0].quoteGenre);
-
-        console.log(quote, genre, author);
+        setIsPending(false);
       });
   };
 
   return (
     <div className="App">
-      <Loading handleClick={handleClick} />
+      {<Loading handleClick={handleClick} loading={!isPending} />}
       <Home quote={quote} author={author} genre={genre} />
     </div>
   );
