@@ -20,8 +20,8 @@ const Loading = ({ handleClick, loading }) => {
           <h3>random</h3>
           <button
             onClick={() => {
-              history.push("/");
               handleClick();
+              history.push("/");
             }}
           >
             <MdAutorenew className="icon-loading" />
