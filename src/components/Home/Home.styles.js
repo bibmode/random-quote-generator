@@ -5,9 +5,14 @@ export const Wrapper = styled.div`
   min-height: calc(100vh - 6.4rem);
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 `;
 
 export const Content = styled.div`
-  background-color: orangered;
   height: fit-content;
+
+  h4 {
+    bottom: 0;
+  }
 `;

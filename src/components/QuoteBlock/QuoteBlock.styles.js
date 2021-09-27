@@ -11,6 +11,7 @@ export const Quote = styled.div`
     font-size: 3.6rem;
     text-align: left;
     line-height: 1.2;
+    margin: 0;
   }
 
   ::before {
