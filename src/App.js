@@ -29,7 +29,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {<Loading handleClick={handleClick} loading={!isPending} />}
+        <Loading handleClick={handleClick} loading={!isPending} genre={genre} />
+
         <Switch>
           <Route exact path="/">
             <Home quote={quote} author={author} genre={genre} />

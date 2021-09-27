@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   .loading-icon {
     margin-top: 3rem;
     font-size: 4rem;
-    color: #333;
+    color: rgba(#333, 0.5);
     animation: loadingAnimation 0.8s ease-in infinite;
   }
 

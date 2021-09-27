@@ -1,9 +1,14 @@
 import { MdAutorenew } from "react-icons/md";
 import { Wrapper } from "./Loading.styles";
 import { useHistory } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-const Loading = ({ handleClick, loading }) => {
+const Loading = ({ handleClick, loading, genre }) => {
   let history = useHistory();
+
+  useEffect(() => {
+    history.push("/");
+  }, [genre]);
 
   return (
     <Wrapper>
@@ -21,7 +26,6 @@ const Loading = ({ handleClick, loading }) => {
           <button
             onClick={() => {
               handleClick();
-              history.push("/");
             }}
           >
             <MdAutorenew className="icon-loading" />
