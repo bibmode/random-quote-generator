@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   margin-left: auto;
   margin-right: 10rem;
 
+  @media only screen and (max-width: 64em) {
+    margin-right: 5%;
+  }
+
   h3 {
     font-size: 1.8rem;
     font-weight: 500;

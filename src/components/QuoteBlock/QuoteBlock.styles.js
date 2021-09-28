@@ -7,6 +7,11 @@ export const Quote = styled.div`
   margin-inline: auto;
   position: relative;
 
+  @media only screen and (max-width: 48em) {
+    //width: 85%;
+    margin-right: 8%;
+  }
+
   p {
     font-size: 3.6rem;
     text-align: left;
@@ -21,5 +26,9 @@ export const Quote = styled.div`
     width: 8px;
     background-color: #f7df94;
     left: min(-10rem, 20%);
+
+    @media only screen and (max-width: 64em) {
+      left: -3rem;
+    }
   }
 `;

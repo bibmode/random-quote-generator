@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   .loading-icon {
     margin-top: 3rem;
     font-size: 4rem;
-    color: rgba(#333, 0.5);
+    color: rgba(130, 130, 130, 0.5);
     animation: loadingAnimation 0.8s ease-in infinite;
   }
 
@@ -29,10 +29,10 @@ export const Wrapper = styled.div`
     :last-child {
       margin-bottom: 0;
     }
-  }
 
-  h4 {
-    margin-top: 5rem;
+    :nth-last-child(2) {
+      margin-bottom: 18rem;
+    }
   }
 `;
 
@@ -42,9 +42,17 @@ export const Name = styled.div`
   margin-bottom: 14rem;
   margin-top: 3rem;
 
+  @media only screen and (max-width: 48em) {
+    margin-left: 4rem;
+  }
+
   h1 {
     font-size: 3.6rem;
     font-weight: 700;
     margin: 0;
+
+    @media only screen and (max-width: 48em) {
+      margin-inline: 5%;
+    }
   }
 `;
