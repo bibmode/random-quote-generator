@@ -10,6 +10,8 @@ const AuthorQuotes = ({ author }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    const abortCont = new AbortController();
+
     let values = {
       quotes: [],
       keys: [],
@@ -30,6 +32,8 @@ const AuthorQuotes = ({ author }) => {
         setKeys(values.keys);
         setLoaded(true);
       });
+
+    return () => abortCont.abort();
   }, [author]);
 
   return (
