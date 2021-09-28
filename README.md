@@ -39,11 +39,11 @@
 
 [![Screenshot-2021-09-29-at-00-03-10-Random-Quotes.png](https://i.postimg.cc/MKGbPDmr/Screenshot-2021-09-29-at-00-03-10-Random-Quotes.png)](https://postimg.cc/NLWHLRV1)
 
--**What was your experience?**
+- **What was your experience?**
 
 -This is the first project I've ever made by myself using React JS and I find the entire process challenging yet enjoyable. React as a library comes with a set of features that I have yet all to explore. But since I plan to use it for all my web applications for the next few months to practice, I look forward to discover more ways around it until I am fully comfortable with this tool. I also used styled components for the styling of this project. I think it's just on par with SASS in terms of functionality and ease of use but it is definitely made with React developers in mind so I will be using this instead of SASS for now.
 
--**What have you learned/improved?**
+- **What have you learned/improved?**
 
 -I've learned the basics of React in this project, including the built-in hooks and how to style the components. I opted for a very folder-type structure to organize my components with their own index files and styled components files. 
 
@@ -55,7 +55,7 @@
 
 -I also used the material design icon pack for this using their npm package and it's a very easy way to add icons without downloading unnecessary files that could take up space and slow down the site.
 
--**Your wisdom? :)**
+- **Your wisdom? :)**
 
 -Since this is the first React app I've built on my own after all the tutorials I watched, I felt a bit intimidated and scared at first but I continued to code through all the challenges, I was glad that I continued to push myself to elarn more about it. I know that most struggles happen in the beginning phase of each endeavor so I will continue to persist until I get through this point and feel more confident in my skills.
 
