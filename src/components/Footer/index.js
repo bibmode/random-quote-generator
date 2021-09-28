@@ -5,7 +5,11 @@ const Footer = () => {
     <Wrapper>
       <h4>
         created by{" "}
-        <a href="https://devchallenges.io/portfolio/bibmode" target="_blank">
+        <a
+          href="https://devchallenges.io/portfolio/bibmode"
+          target="_blank"
+          rel="noreferrer"
+        >
           Genevieve Navales
         </a>{" "}
         - devChallenges.io{" "}

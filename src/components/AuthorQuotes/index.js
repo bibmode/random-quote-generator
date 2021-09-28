@@ -22,7 +22,7 @@ const AuthorQuotes = ({ author }) => {
     fetch(url)
       .then((res) => res.json())
       .then((response) => {
-        response.data.map((item) => {
+        response.data.forEach((item) => {
           values.quotes.push(item.quoteText);
           values.keys.push(item._id);
         });
@@ -30,7 +30,7 @@ const AuthorQuotes = ({ author }) => {
         setKeys(values.keys);
         setLoaded(true);
       });
-  }, []);
+  }, [author]);
 
   return (
     <Wrapper>
