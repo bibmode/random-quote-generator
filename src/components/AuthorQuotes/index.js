@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import QuoteBlock from "../QuoteBlock";
 import { Name, Wrapper } from "./AuthorQuotes.styles";
 import { MdCached } from "react-icons/md";
+import Footer from "../Footer";
 
 const AuthorQuotes = ({ author }) => {
   const [quotes, setQuotes] = useState(null);
@@ -41,6 +42,7 @@ const AuthorQuotes = ({ author }) => {
         quotes.map((quote, index) => (
           <QuoteBlock quote={quote} key={keys[index]} />
         ))}
+      <Footer className="footer" />
     </Wrapper>
   );
 };

@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
     font-size: 1.8rem;
     font-weight: 500;
     padding-inline: 1rem;
+    margin-block: 2.5rem;
   }
 
   button {
